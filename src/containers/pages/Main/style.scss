@@ -1,0 +1,50 @@
+.container {
+	margin: 0 40px;
+}
+
+.header {
+	margin: 0;
+	width: 100%;
+	padding: 12px;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	z-index: 100;
+	border-bottom: 2px solid rgba(204, 199, 199, 0.1);
+
+	.logo {
+		margin: 0;
+		font-weight: 600;
+		opacity: 0.8;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	.header-login {
+		display: flex;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+
+		.link-btn {
+			margin-left: 20px;
+			margin-right: 40px;
+			opacity: 0.8;
+			cursor: pointer;
+			color: rgba(0, 0, 0, 0.8);
+			text-decoration: none;
+			&:hover {
+				opacity: 1;
+				text-decoration: underline;
+				text-decoration-color: #d35400;
+			}
+		}
+	}
+}
+
+// Cover Style

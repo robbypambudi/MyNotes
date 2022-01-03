@@ -1,0 +1,121 @@
+.Dashboard {
+	margin: 50px;
+	margin-top: 0px;
+	display: block;
+	.input-form {
+		margin: auto;
+		display: flex;
+		width: 75%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.input-title {
+			width: 40%;
+			background: white;
+			border: 1px solid green;
+			padding: 12px;
+			border-radius: 4px;
+			margin-bottom: 16px;
+			box-sizing: border-box;
+			outline: none;
+		}
+
+		.input-content {
+			width: 40%;
+			border: 1px solid green;
+			border-radius: 4px;
+			box-sizing: border-box;
+			padding: 12px;
+			min-height: 200px;
+			margin-bottom: 16px;
+			font-size: 14px;
+			color: gray;
+			outline: none;
+		}
+		.save-btn {
+			padding: 12px 50px;
+			border-radius: 4px;
+			background: white;
+			border: 2px solid green;
+			color: green;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			outline: none;
+			cursor: pointer;
+			&.cancel {
+				border: 2px solid orange;
+				color: orange;
+				&:hover {
+					background: orange;
+					color: white;
+				}
+			}
+			&:hover {
+				background: green;
+				color: white;
+			}
+		}
+		.action-wrapper {
+			display: flex;
+			justify-content: space-between;
+			width: 40%;
+		}
+	}
+	.card-container {
+		@media screen and (max-width: 565px) {
+			background-color: #f7b42c;
+			background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+		}
+		@media screen and (max-width: 1280px) and (min-width: 565px) {
+			background: rgba(255, 237, 237, 0.8);
+			&:hover {
+				cursor: pointer;
+				background: rgba(255, 237, 237, 1);
+				transform: translate(-2px);
+			}
+		}
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		padding: 16px;
+		box-shadow: 4px 3px 9px rgba(0, 0, 0, 0.1);
+		margin-bottom: 16px;
+		transition: all ease 0.35s;
+		position: relative;
+
+		p {
+			margin: 0;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.date {
+			font-size: 12px;
+		}
+		.content {
+			margin-top: 20px;
+			font-size: 14px;
+		}
+		.delete-btn {
+			width: 30px;
+			height: 30px;
+			background: red;
+			border-radius: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+			color: white;
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
